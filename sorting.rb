@@ -1,1 +1,81 @@
 # sorting algps
+
+
+# Quicksort
+
+# Time complexity: 
+# 	Best:  n log n
+# 	Average: n log n
+# 	Worst:  n^2
+#
+# The steps are:
+# 	1.	Pick an element, called a pivot, from the array.
+# 	2.	Partitioning: reorder the array so that all elements with values less than the pivot come before the pivot, while all elements with values greater than the pivot come after it (equal values can go either way). After this partitioning, the pivot is in its final position. This is called the partition operation.
+# 	3.	Recursively apply the above steps to the sub-array of elements with smaller values and separately to the sub-array of elements with greater values.
+#
+#
+# Merge Sort
+#
+# Time complexity:
+# 	Best:	n log n
+# 	Average:  n log n
+# 	Worst:  n log n
+#
+# Conceptually, a merge sort works as follows:
+# 	1.	Divide the unsorted list into n sublists, each containing 1 element (a list of 1 element is considered sorted).
+# 	2.	Repeatedly merge sublists to produce new sorted sublists until there is only 1 sublist remaining. This will be the sorted list.
+#
+#
+# Heapsort
+#
+# Time complexity:
+# 	Best: n (if keys are distinct), n log n
+# 	Average: n log n
+# 	Worst:  n log n
+#
+# The heapsort algorithm involves preparing the list by first turning it into a max heap. The algorithm then repeatedly swaps the first value of the list with the last value, decreasing the range of values considered in the heap operation by one, and sifting the new first value into its position in the heap. This repeats until the range of considered values is one value in length.
+# The steps are:
+# 	1.	Call the buildMaxHeap() function on the list. Also referred to as heapify(), this builds a heap from a list in O(n) operations.
+# 	2.	Swap the first element of the list with the final element. Decrease the considered range of the list by one.
+# 	3.	Call the siftDown() function on the list to sift the new first element to its appropriate index in the heap.
+# 	4.	Go to step (2) unless the considered range of the list is one element.
+# The buildMaxHeap() operation is run once, and is O(n) in performance. The siftDown() function is O(log n), and is called n times. Therefore, the performance of this algorithm is O(n + n log n) = O(n log n).
+#
+#
+# Insertion Sort
+#
+# Time complexity:
+# 	Best: n
+# 	Average: n^2
+# 	Worst:  n^2
+#
+# Insertion sort iterates, consuming one input element each repetition, and growing a sorted output list. At each iteration, insertion sort removes one element from the input data, finds the location it belongs within the sorted list, and inserts it there. It repeats until no input elements remain.
+#
+# Bubble Sort
+#
+# Time complexity:
+# 	Best: n
+# 	Average: n^2
+# 	Worst:  n^2
+#
+# Starting from the beginning of the list, compare every adjacent pair, swap their position if they are not in the right order (the latter one is smaller than the former one). After each iteration, one less element (the last one) is needed to be compared until there are no more elements left to be compared.
+#
+# Binary Tree Sort
+#
+# Time complexity:
+# 	Best: n log n
+# 	Average: n log n
+# 	Worst:  n log n
+#
+# To add an element to a heap we must perform an up-heap operation (also known as bubble-up, percolate-up, sift-up, trickle-up, swim-up, heapify-up, or cascade-up), by following this algorithm:
+# 	1.	Add the element to the bottom level of the heap.
+# 	2.	Compare the added element with its parent; if they are in the correct order, stop.
+# 	3.	If not, swap the element with its parent and return to the previous step.
+# The number of operations required depends only on the number of levels the new element must rise to satisfy the heap property, thus the insertion operation has a worst-case time complexity of O(log n) but an average-case complexity of O(1).
+#
+#
+# The procedure for deleting the root from the heap (effectively extracting the maximum element in a max-heap or the minimum element in a min-heap) and restoring the properties is called down-heap (also known as bubble-down, percolate-down, sift-down, sink-down, trickle down, heapify-down, cascade-down, and extract-min/max).
+# 	1.	Replace the root of the heap with the last element on the last level.
+# 	2.	Compare the new root with its children; if they are in the correct order, stop.
+# 	3.	If not, swap the element with one of its children and return to the previous step. (Swap with its smaller child in a min-heap and its larger child in a max-heap.)
+#
