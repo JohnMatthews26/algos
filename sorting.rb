@@ -3,7 +3,7 @@
 
 # Quicksort
 
-# Time complexity: 
+# Time complexity:
 # 	Best:  n log n
 # 	Average: n log n
 # 	Worst:  n^2
@@ -66,6 +66,9 @@
 # 	Best: n log n
 # 	Average: n log n
 # 	Worst:  n log n
+
+
+
 #
 # To add an element to a heap we must perform an up-heap operation (also known as bubble-up, percolate-up, sift-up, trickle-up, swim-up, heapify-up, or cascade-up), by following this algorithm:
 # 	1.	Add the element to the bottom level of the heap.
