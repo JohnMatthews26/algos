@@ -82,3 +82,5 @@
 # 	2.	Compare the new root with its children; if they are in the correct order, stop.
 # 	3.	If not, swap the element with one of its children and return to the previous step. (Swap with its smaller child in a min-heap and its larger child in a max-heap.)
 #
+
+#.
