@@ -1,4 +1,4 @@
- sorting algps
+Sorting Algos
 
 
  Quicksort
